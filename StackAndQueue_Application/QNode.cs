@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace StackAndQueue_Application
 {
-    internal class Node
+    public class QNode
     {
-        public int data;
-        public Node next;
-        public Node(int data)
+        public int key;
+        public QNode next;
+
+        public QNode(int key)
         {
-            this.data = data;
+            this.key = key;
+            this.next = null;
         }
-       
     }
 }
